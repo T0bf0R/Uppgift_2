@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;900&display=swap');
+
+
+/*
+color: #FFBB00;
+color: #8A8A8A;
+color: #333333;
+color: #FFBB00; gradient
+*/
+*{
+    box-sizing: border-box;
+}
+html{
+    font-size: 14px;
+}
+h1{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+textarea, input {
+    background-color: #FBFBFB !important;
+    
+    border: none !important;
+}
+::placeholder {
+    color: #CCCCCC !important;
+}
+.autoplay{
+    margin: 1rem;
+}
+.btn-orange{
+    background-color: #ffbb00;
+    color: #fff;
+    border-radius: 1rem;
+    font-family: 'Roboto', sans-serif;
+    opacity: 100%;
+    margin-left: 1rem;
+    
+}
+.nav-item{
+    margin-left: 2rem;
+    position: relative;
+    
+}
+.nav-item a {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1rem;
+    display: " ";
+    position: relative;
+    color: #fff !important;
+    font-weight: 500 !important;
+}
+.nav-item a:hover {
+    color: #ffbb00 !important;
+}
+.nav-item a:hover::after {
+    position: absolute;
+    content: "";
+    background-color: #ffbb00;
+    width: 2rem;
+    height: 0.2rem;
+    left: 0.5rem;
+    top: 32px;
+}
+.header-text{
+    max-width: 37.375rem;
+}
+#header .mobiles {
+    text-align: right;
+}
+#header .mobiles img {
+    height: auto;
+    width: 100%;
+    object-position: center;
+}
+.header-buttons-size{
+    height: 50px;
+    width: 160px;
+}
+.no-border{
+    border: none;
+}
+.button-bg{
+    background-image: url(../Images/Icon.svg);
+        background-repeat: no-repeat;
+    background-position: left center;
+    background-color: transparent;
+}
+
+.bg-blue{
+    background: rgb(20,135,253);
+}
+.bg-banner-overlay{
+    background-image: url(../Images/banner-overlay.svg);
+    overflow: hidden;
+    
+}
+.bg-world-map{
+    background-image: url(../Images/world-map.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: visible;
+    
+}
+.bg-features{
+    background-color: #F5F5F5;
+    background-image: url(../Images/BG\ Features.svg); 
+    background-repeat: no-repeat;
+    background-position: left center;
+ }
+.bg-footer{
+    background-image: url(../Images/Bg_footer.svg);
+    height: 18.75rem;
+}
+.section-header-width{
+    max-width: 33.6rem;
+}
+
+.stats h1{
+    color: #1487FD;
+    font-size: 2.5rem;
+    font-weight: 600;
+    
+}
+.stats p{
+    font-weight: 500;
+    font-size: 1.5625rem;
+}
+.banner-text{
+    color: #FFF;
+    
+}
+.banner-text h1{
+    font-size: 3.125rem;
+    font-weight: 600;
+    max-width: 45.5rem;
+    
+}
+.banner-text p{
+    max-width: 37.5rem;
+}
+.banner-iphones{
+    margin-top: 5.5rem;
+    margin-bottom: -12.5rem;
+    overflow: hidden;
+}
+.application-screens-image{
+    max-width: 100%;
+        max-height: 100%;
+        display: block;
+}
+.application-statistics{
+    min-height: 22.6875rem;
+}
+#header{    
+    background-color: rgb(20,135,253); /* For browsers that do not support gradients */
+    background-image: linear-gradient(to right,rgb(20,135,253),rgb(66,160,255));
+    
+}
+#header h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 3.17rem;
+    font-weight: 700;
+}
+#header p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.94rem;
+    font-weight: 400;
+}
+#about-us .left-column {
+    flex: 1;
+    position: relative;
+  }
+#about-us h1, #application-screens h1, #application-statistics h1, #features h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+.feature-header-block{
+    background-color: #FDF3D7;
+    color: #FFBB00;
+    border-radius: 7px;
+    height: 30px;
+    width: 87px;
+    text-align: center;
+}
+.feature-content-block{
+    max-width: 41.875rem;
+}
+.icon-size{
+    width: 21px;
+    height: 19px;
+}
+.icon-background{
+    background-color: #FDF3D7;
+    width: 45px;
+    height: 45px;
+    border-radius: 8px;
+}
+.card-horizontal {
+    display: flex;
+    flex: 1 1 auto;
+}
+.card-img-top{
+    height: 45px;
+    width: 45px;
+}
+.card-title{
+    font-size: 1.25rem;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+}
+.card-text{
+    font-size: 0.875rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+#about-us .left-column .bg-spinning {
+    position: absolute;
+    z-index: -1;
+    top: 5%;
+    left: -25%;
+    animation: spin 4s linear infinite;
+  }
+
+#about-us .right-column {
+    flex: 1;
+    max-width: 35.625rem;
+  }
+
+@keyframes spin {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+#about-us button{
+    background-color: #F8F8F8;
+    height: 80px;
+    width: 232px;
+    border-radius: 12px;
+    border: hidden;
+}
+#about-us button:hover{
+    opacity: 80%;
+    transition: 500ms;    
+}
+#banner{
+    max-height: 34.375rem;
+}
+
+#banner button{
+    background-color: #FFF;
+    height: 80px;
+    width: 232px;
+    border-radius: 12px;
+    border: hidden;
+}
+#banner button:hover{
+    opacity: 90%;
+    transition: 500ms;    
+}
+
+#contact-us h1{
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+#contact-us button{
+    height: 3.75rem;
+    width: 13.75rem;
+    font-family: 'Roboto', sans-serif;       
+}
+
+#footer-nav a{
+    color: #fff;
+    margin: 1.125rem;
+    font-weight: 500;
+    
+}
+#footer-social .fab{
+    color: #fff;
+    font-size: 1rem;
+}
+#footer-social .fa-square{
+    color: #53A8FE;
+    font-size: 2rem;
+}
+
+@media (min-width: 576px){
+    .container{
+        max-width: 570px;
+    }
+    html{
+        font-size: 14px;
+    } 
+}
+@media (min-width: 768px){
+    .container{
+        max-width: 760px;
+    }
+    html{
+        font-size: 16px;
+    }
+    
+}
+@media (min-width: 1200px){
+    .container{
+        max-width: 1140px;
+    }
+    #header{
+        background-color: transparent;
+        background-image: url(../Images/header-bg.png);
+        background-repeat: no-repeat;
+        background-position: bottom center;
+        max-height: 935px;
+    }
+}
